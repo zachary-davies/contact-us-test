@@ -43,9 +43,9 @@ const ContactInfo = () => {
               1-800-664-9073.
             </a>
           </span>
-          <span style={{ marginBottom: "8px" }}>
+          <p>
             <b>More questions?</b>
-          </span>
+          </p>
           <span>
             For billing and tech support, visit <a href="#">Salesforce Help.</a>
           </span>
