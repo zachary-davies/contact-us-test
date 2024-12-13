@@ -1,5 +1,6 @@
 a {
   color: var(--sds-g-color-palette-blue-50);
+  text-decoration: underline;
 }
 
 .contact-container {

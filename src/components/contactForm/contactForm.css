@@ -48,6 +48,10 @@ select:focus {
   background-color: #ecf5fd;
 }
 
+.modal-input label {
+  font-size: 14px;
+}
+
 .modal-checkbox {
   margin-bottom: 10px;
   display: flex;

@@ -20,7 +20,7 @@ const ContactForm = (props) => {
       phone: "",
       companySize: "",
       productInterest: "",
-      country: "",
+      country: "US",
       region: "",
     },
     validationSchema: Yup.object().shape({
@@ -205,7 +205,8 @@ const ContactForm = (props) => {
             value={formik.values.country}
             onChange={(_, e) => formik.handleChange(e)}
             onBlur={formik.handleBlur}
-            whitelist={["GB", "US", "CA"]}
+            valueType="short"
+            priorityOptions={["GB", "US", "CA"]}
             style={{
               color: formik.values.country ? "#000" : "#747474",
             }}
@@ -225,6 +226,7 @@ const ContactForm = (props) => {
           <label htmlFor="region">State/province</label>
           <RegionDropdown
             name="region"
+            countryValueType="short"
             country={formik.values.country}
             value={formik.values.region}
             onChange={(_, e) => formik.handleChange(e)}
@@ -276,7 +278,21 @@ const ContactForm = (props) => {
           <select>
             <option>🇺🇸 +1</option>
             <option>🇨🇦 +1</option>
+            <option>🇪🇬 +20</option>
+            <option>🇧🇪 +32</option>
+            <option>🇪🇸 +34</option>
+            <option>🇭🇺 +36</option>
+            <option>🇮🇹 +39</option>
+            <option>🇨🇭 +41</option>
             <option>🏴󠁧󠁢󠁥󠁮󠁧󠁿 +44</option>
+            <option>🇲🇽 +52</option>
+            <option>🇻🇳 +54</option>
+            <option>🇲🇾 +60</option>
+            <option>🇸🇬 +65</option>
+            <option>🇯🇵 +81</option>
+            <option>🇨🇳 +86</option>
+            <option>🇹🇷 +90</option>
+            <option>🇮🇷 +98</option>
           </select>
           <span className="phone-line"></span>
           {formik.touched.phone && formik.errors.phone ? (
