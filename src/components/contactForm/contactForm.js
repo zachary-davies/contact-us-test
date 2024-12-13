@@ -154,7 +154,7 @@ const ContactForm = (props) => {
 
         {/** Product Interest*/}
         <div className="modal-input">
-          <label htmlFor="productInterest">Product Interest</label>
+          <label htmlFor="productInterest">Product interest</label>
           <select
             name="productInterest"
             value={formik.values.productInterest}
@@ -199,7 +199,7 @@ const ContactForm = (props) => {
 
         {/** Country*/}
         <div className="modal-input">
-          <label htmlFor="country">Country</label>
+          <label htmlFor="country">Country/region</label>
           <CountryDropdown
             name="country"
             value={formik.values.country}
@@ -222,7 +222,7 @@ const ContactForm = (props) => {
 
         {/** Region*/}
         <div className="modal-input">
-          <label htmlFor="region">State/Province</label>
+          <label htmlFor="region">State/province</label>
           <RegionDropdown
             name="region"
             country={formik.values.country}
@@ -284,10 +284,7 @@ const ContactForm = (props) => {
           ) : null}
         </div>
 
-        <div
-          className="modal-subtext"
-          style={{ flex: "1 0 100%", textAlign: "left" }}
-        >
+        <div className="modal-subtext" style={{ textAlign: "left" }}>
           <p>
             By registering, you agree to the processing of your personal data by
             Salesforce as described in the <a>Privacy Statement.</a>
@@ -297,6 +294,12 @@ const ContactForm = (props) => {
           <button className="pbc-button" data-variant="primary" type="submit">
             Submit
           </button>
+        </div>
+        <div className="modal-subtext" style={{ textAlign: "left" }}>
+          <p>
+            This site is protected by reCAPTCHA and the Google{" "}
+            <a>Privacy Policy</a> and <a>Terms of Service</a> apply
+          </p>
         </div>
       </form>
     </div>

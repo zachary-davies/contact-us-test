@@ -17,7 +17,9 @@ const Connect = () => {
           </div>
           <h3>Find a Global Office</h3>
           <span>Not in the U.S? Find a Global Office near you.</span>
-          <a href="#">See our Global Offices</a>
+          <a href="https://www.salesforce.com/company/locations/?d=cta-body-promo-1">
+            See our Global Offices
+          </a>
         </div>
 
         <div className="connect-column">
@@ -28,7 +30,9 @@ const Connect = () => {
           <span>
             Users with permissions can self-manage licenses and renewals.
           </span>
-          <a href="#">Learn about Your Account App</a>
+          <a href="https://www.salesforce.com/your-account/">
+            Learn about Your Account App
+          </a>
         </div>
 
         <div className="connect-column">
@@ -37,7 +41,9 @@ const Connect = () => {
           </div>
           <h3>Send us feedback.</h3>
           <span>Let us know what you think: products, site or otherwise.</span>
-          <a href="#">Send feedback</a>
+          <a href="https://www.salesforce.com/company/feedback/?d=cta-body-promo-4">
+            Send feedback
+          </a>
         </div>
       </div>
     </div>
